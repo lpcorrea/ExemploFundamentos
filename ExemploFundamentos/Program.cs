@@ -1,18 +1,34 @@
 ﻿using System;
-using ExemploFundamentos.Models;
+using ExemploFundamentos.Common.Models;
 
-namespace ExemploFundamentos
+namespace ExemploFundamentos;
+
+class Program
 {
-    class Program
+    public static void Main(String[] args)
     {
-        static void Main(string[] args)
-        {
-            Pessoa pessoa1 = new Pessoa();
-            
-            pessoa1.Nome = "Luiz Pedro";
-            pessoa1.Idade = 26;
+        int[] arrayInteiros = new int[3];
 
-            pessoa1.Apresentar();
+        arrayInteiros[0] = 72;
+        arrayInteiros[1] = 64;
+        arrayInteiros[2] = 50;
+
+        foreach (int inteiro in arrayInteiros)
+        {
+            Console.WriteLine(inteiro);
         }
+        
+        // for (int i = 0; i < arrayInteiros.Length; i++)
+        // {
+        //     Console.WriteLine(arrayInteiros[i]);
+        // }
+
+        // Pessoa pessoa1 = new Pessoa();
+        //
+        // pessoa1.Nome = "Luiz Pedro";
+        // pessoa1.Idade = 26;
+        // pessoa1.Forca = 200f;
+        // for (var i = 0; i < 3; i++) { pessoa1.AumentaForca(); }
+        //  pessoa1.Apresentar();
     }
 }

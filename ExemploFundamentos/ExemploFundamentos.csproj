@@ -12,4 +12,8 @@
       <Compile Remove="Static.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ExemploFundamentos.Common\ExemploFundamentos.Common.csproj" />
+    </ItemGroup>
+
 </Project>
